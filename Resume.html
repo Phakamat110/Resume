@@ -1,0 +1,51 @@
+git status<!DOCTYPE html>
+<html>
+  <head>
+    <title>Resume
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="Resume.css" rel="stylesheet">
+    <script src="Resume.js"></script>
+  </head>
+  
+  <body>
+    
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#Education">Education</a>
+      <a href="#Skill">Skill</a>
+    </div>
+    
+    <div class="container">
+    <img src="https://sv1.picz.in.th/images/2019/10/17/cvIfHg.png" class="image" width="1530" style="width:100%">
+      <div class="top-left">
+        <p>Name : <input type="text" class="fname" value="Jane Smith"> </p>
+        <p>Nickname : <input type="text" class="fname" value="Jane"></p>
+        <p id="Education">Education : <input type="text" class="fname" value="School"></p>
+        
+        <p>Add Skill : 
+        <input class="fskill" placeholder="Add your Skill" type="text" id="val">
+        <button class="buttonskill" type="ADD" onclick="insertValue();">Add Skill</button>
+        <br>
+        <p id="Skill">My Skill : 
+        <select class="select" id="mySelect">
+          <option>Photoshop</option>
+          <option>Play Game</option>
+          <option>Sleep</option>
+        </select>
+        <input class="buttonskill" type="button" onclick="removeSkill()" value="Remove Skill">
+          </p>
+      </div> 
+    </div>
+
+    <div class="menu">
+      <a>Change background color :</a>
+      <a onclick="yellow()">Yellow</a>
+      <a onclick="pink()">Pink</a>
+      <a onclick="blue()">Blue</a>
+      <a onclick="white()">White</a>
+    </div>
+    
+  </body>
+  
+</html> 
